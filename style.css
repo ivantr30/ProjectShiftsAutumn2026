@@ -1,0 +1,148 @@
+header{
+    background-color:rgb(41,49,51);
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 233, 213);
+    min-height: 100vh;
+}
+.flag{
+    width: 4.5vw;
+    height: 3.5vw;
+    display: block;
+    user-select: none;
+}
+html{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color:rgb(250, 233, 213);
+    margin-left: 1vw;
+    padding: 1vw;
+    min-width: 4vw;
+    background-color: rgb(145, 129, 111);
+    border-radius: 0.5vw;
+    text-align: center;
+    font-size: 1vw;
+    user-select: none;
+}
+.bgImage{
+    background-image: url("https://tatarlar.info/wp-content/uploads/2020/06/tatary-tancujut-1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgImage h1{
+    padding: 0;
+    margin: 0;
+    font-size: 8vw;
+    color:rgb(252, 211, 167);
+    text-shadow: 0.2vw 0.2vw 0.5vw black;
+    user-select: none;
+}
+.content{
+    display: flex;
+    align-items: stretch;
+}
+.leftside, .rightside{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.chakchak, .mechet, .ludi, .oldpic, .symbol, .view{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    flex: 1;
+}
+.chakchak{
+    background-image: url("https://menunedeli.ru/wp-content/uploads/2023/10/DSC07809-scaled.jpg");
+}
+.mechet{
+    background-image: url("https://aee240dd-a6d3-4d7e-bd0d-0679d78e28bb.selstorage.ru/img/2023/10/30/c1e7a14008e6912e87575465510110f6be68be1d.jpg");
+}
+.ludi{
+    background-image: url("https://milliard.tatar/images/uploads/dce300da10e78b03d9b28c29a41eca08.jpg");
+}
+.oldpic{
+    background-image: url("https://tatarica.org/application/files/cache/thumbnails/3a5e7bdd46d55df27d4e933a80498ed5.jpg");
+}
+.symbol{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/90/Coat_of_arms_of_Tatarstan.svg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original");
+}
+.view{
+    background-image: url("https://vmeste-rf.tv/upload/resize_cache/iblock/75a/1040_650_2/lori_0006414832_a6.jpg");
+}
+.center{
+    width: 60vw;
+    height: auto;
+}
+.centercontent{
+    margin: 2vw;
+}
+.costumes, .tradition, .food, .history{
+    display: flex;
+    margin-top: 1.5vw;
+}
+.centercontent p{
+    padding: 1vw;
+    background-color: rgb(145, 129, 111);
+    color: rgb(250, 233, 213);
+    border-radius: 1vw;
+}
+.costumes p, .food p{
+    margin: 0;
+    margin-left: 1.5vw;
+    font-size: 1.25vw;
+}
+.centercontent img{
+    height: 35vh;
+    width: 40%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 1vw;
+    transition: transform 0.4s ease;
+    box-shadow: 0 0.2vw 2vw 0.5vw black;
+}
+.costumes img{
+    height: 70vh;
+}
+.centercontent img:hover{
+    transform: scale(1.15); 
+}
+.tradition p, .history p{
+    margin: 0;
+    margin-right: 1.5vw;
+    font-size: 1.25vw;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(41,49,51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: rgb(250, 233, 213);
+}
