@@ -4,6 +4,9 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 ul{
     list-style-type: none;
@@ -11,6 +14,9 @@ ul{
     display: flex;
     align-items: center;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 body{
     margin: 0;
@@ -20,9 +26,12 @@ body{
 }
 .flag{
     width: 4.5vw;
-    height: 3.5vw;
+    height: 7vh;
     display: block;
     user-select: none;
+}
+.imgbutton{
+    padding: 0;
 }
 html{
     font-family: "Oswald", sans-serif;
@@ -36,12 +45,12 @@ li a{
     text-decoration: none;
     color:rgb(250, 233, 213);
     margin-left: 1vw;
-    padding: 1vw;
+    padding: 2vh 1.2vw;
     min-width: 4vw;
     background-color: rgb(145, 129, 111);
     border-radius: 0.5vw;
     text-align: center;
-    font-size: 1vw;
+    font-size: 2vh;
     user-select: none;
 }
 .bgImage{
@@ -105,25 +114,26 @@ li a{
     display: flex;
     margin-top: 1.5vw;
 }
-.centercontent p{
+.centercontent selection{
     padding: 1vw;
     background-color: rgb(145, 129, 111);
     color: rgb(250, 233, 213);
     border-radius: 1vw;
 }
-.costumes p, .food p{
+.costumes selection, .food selection{
     margin: 0;
     margin-left: 1.5vw;
-    font-size: 1.25vw;
+    font-size: 1.35vw;
 }
 .centercontent img{
-    height: 35vh;
+    height: 30vh;
     width: 40%;
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 1vw;
     transition: transform 0.4s ease;
     box-shadow: 0 0.2vw 2vw 0.5vw black;
+    user-select: none;
 }
 .costumes img{
     height: 70vh;
@@ -131,10 +141,10 @@ li a{
 .centercontent img:hover{
     transform: scale(1.15); 
 }
-.tradition p, .history p{
+.tradition selection, .history selection{
     margin: 0;
     margin-right: 1.5vw;
-    font-size: 1.25vw;
+    font-size: 1.35vw;
 }
 footer{
     width: 100%;
@@ -145,4 +155,35 @@ footer{
     justify-content: center;
     font-size: 3vw;
     color: rgb(250, 233, 213);
+}
+@media (max-width: 900px) {
+    .rightside, .leftside{
+        display: none;
+    }
+    .center{
+        width: 100%;
+    }
+    .center selection{
+        font-size: 3.25vw;
+    }
+    .center img{
+        height: 40vh;
+        width: 30%;
+        object-fit: cover;
+    }
+    .bgImage{
+        height: 50vh;
+    }
+    .bgImage h1{
+        font-size: 12vw;
+    }
+    .flag, .imgbutton{
+        width: 12vw;
+        height: 5vh;
+    }
+    li a {
+        padding: 1vh 2vw; 
+        font-size: 2vh;   
+        border-radius: 1vw;
+    }
 }
