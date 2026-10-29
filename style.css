@@ -115,17 +115,21 @@ li a{
     margin-top: 1.5vw;
 }
 .centercontent selection{
+.centercontent selection{
     padding: 1vw;
     background-color: rgb(145, 129, 111);
     color: rgb(250, 233, 213);
     border-radius: 1vw;
 }
 .costumes selection, .food selection{
+.costumes selection, .food selection{
     margin: 0;
     margin-left: 1.5vw;
     font-size: 1.35vw;
+    font-size: 1.35vw;
 }
 .centercontent img{
+    height: 30vh;
     height: 30vh;
     width: 40%;
     flex-shrink: 0;
@@ -133,6 +137,7 @@ li a{
     border-radius: 1vw;
     transition: transform 0.4s ease;
     box-shadow: 0 0.2vw 2vw 0.5vw black;
+    user-select: none;
     user-select: none;
 }
 .costumes img{
@@ -142,8 +147,10 @@ li a{
     transform: scale(1.15); 
 }
 .tradition selection, .history selection{
+.tradition selection, .history selection{
     margin: 0;
     margin-right: 1.5vw;
+    font-size: 1.35vw;
     font-size: 1.35vw;
 }
 footer{
