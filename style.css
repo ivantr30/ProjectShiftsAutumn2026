@@ -110,7 +110,7 @@ li a{
 .centercontent{
     margin: 2vw;
 }
-.costumes, .tradition, .food, .history{
+.costumes, .tradition, .food, .history, .songs{
     display: flex;
     margin-top: 1.5vw;
 }
@@ -120,13 +120,12 @@ li a{
     color: rgb(250, 233, 213);
     border-radius: 1vw;
 }
-.costumes selection, .food selection{
+.costumes selection, .food selection, .songs selection{
     margin: 0;
     margin-left: 1.5vw;
     font-size: 1.35vw;
 }
 .centercontent img{
-    height: 30vh;
     width: 40%;
     flex-shrink: 0;
     object-fit: cover;
@@ -135,8 +134,8 @@ li a{
     box-shadow: 0 0.2vw 2vw 0.5vw black;
     user-select: none;
 }
-.costumes img{
-    height: 70vh;
+.history img{
+    object-fit: contain;
 }
 .centercontent img:hover{
     transform: scale(1.15); 
@@ -165,11 +164,6 @@ footer{
     }
     .center selection{
         font-size: 3.25vw;
-    }
-    .center img{
-        height: 40vh;
-        width: 30%;
-        object-fit: cover;
     }
     .bgImage{
         height: 50vh;
