@@ -113,6 +113,7 @@ li a{
 .costumes, .tradition, .food, .history, .songs{
     display: flex;
     margin-top: 1.5vw;
+    scroll-margin-top: 12vh;
 }
 .centercontent selection{
     padding: 1vw;
